@@ -21,10 +21,10 @@ export class Home extends Component {
                 <div className="name">Charlton Smith</div>
                 <h1 className="tagline"><strong className="bold-text">Developer. Hacker. Linguist.</strong></h1>
                 <p className="bio">
-                    Just another minority pushing boundaries
+                    Just another minority pushing boundaries. Learning Japanese and creating great things!
                 </p>
                 <div className="links w-row">
-                    <div className="column w-col w-col-4">
+                    <div className="column w-col w-col-6">
                         <div className="text-block-2">Connect</div>
                         <ul role="list" className="list w-list-unstyled">
                             <li>
@@ -32,7 +32,7 @@ export class Home extends Component {
                             </li>
                         </ul>
                     </div>
-                    <div className="column-2 w-col w-col-4">
+                    <div className="column-2 w-col w-col-6">
                         <div className="text-block-2">Codes</div>
                         <ul role="list" className="list w-list-unstyled">
                             <li>
@@ -40,18 +40,6 @@ export class Home extends Component {
                             </li>
                         </ul>
                     </div>
-                    <div className="w-col w-col-4">
-                        <div className="text-block-2">network</div>
-                        <ul role="list" className="list w-list-unstyled">
-                            <li>
-                                <a href="#">Link One</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="credit">©2020 Your Name - <a href="https://onepagelove.com/split" target="_blank"
-                                                             className="credit-links">Split Template</a> by <a
-                    href="https://onepagelove.com" target="_blank" className="credit-links">One Page Love</a>
                 </div>
             </div>
 
