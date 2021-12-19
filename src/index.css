@@ -1,13 +1,52 @@
+@font-face {
+    font-family: 'RiiTegakiFude';
+    src: local("fonts/calligraphy-riitf.otf"), url(./fonts/calligraphy-riitf.otf) format("opentype");
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'RiiTegakiFude';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.jap {
+    color: white;
+    font-size: 1.875em;
+    font-family: 'RiiTegakiFude';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.jap .small {
+    color: white;
+    font-size: 0.875em;
+    font-family: 'RiiTegakiFude';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.vcs {
+    background-image: url("images/cheat-device.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 480px;
+    height: 272px;
+}
+.lane {
+    background-image: url("images/line.GIF");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 99px;
+}
+.lane2 {
+    background-image: url("images/line_detection.GIF");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 99px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

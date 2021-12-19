@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Link, Routes} from 'react-router-dom';
+import React, {Component} from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import './index.css'
+import './App.css'
+import Project from "./Pages/Project";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Hiragana from "./Pages/Hiragana";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends Component {
+
+
+    constructor(props) {
+        super(props);
+    }
+
+    componentDidMount() {
+
+    }
+
+    render() {
+
+
+        return (
+            <div className="App container-fluid">
+                <BrowserRouter>
+                    <div className="navigationMenu">
+                        <div className="links w-row">
+                            <div className="column w-col w-col-4">
+                                <div className="text-block-2"><Link to="/" className="navigationItems">Home</Link></div>
+                            </div>
+                            <div className="column-2 w-col w-col-4">
+                                <div className="text-block-2"><Link to="/about" className="navigationItems">About</Link></div>
+                            </div>
+                            <div className="w-col w-col-4">
+                                <div className="text-block-2"><Link to="/hiragana" className="navigationItems">Hiragana</Link></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <Routes>
+                        <Route exact path="/" element={<Home/>}/>
+                        <Route exact path="/about" element={<About/>}/>
+                        <Route exact path="/projects" element={<Project/>}/>
+                        <Route exact path="/hiragana" element={<Hiragana/>}/>
+                    </Routes>
+                </BrowserRouter>
+            </div>
+        );
+    }
 }
 
 export default App;
