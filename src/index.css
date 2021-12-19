@@ -10,8 +10,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.corners {
+    padding: 20px;
+    margin: 40px;
+    background-color: #ddd;
+    border-radius:20px;
+}
+
 .jap {
-    color: white;
+    color: black;
     font-size: 1.875em;
     font-family: 'RiiTegakiFude';
     -webkit-font-smoothing: antialiased;
@@ -19,11 +26,49 @@ body {
 }
 
 .jap .small {
-    color: white;
+    color: black;
     font-size: 0.875em;
     font-family: 'RiiTegakiFude';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.navigationItems {
+    text-decoration: none;
+    text-decoration-color: black;
+    color: black;
+    font-size: 1.875em;
+}
+
+.high {
+    font-size: 1.875em;
+    color:black;
+    font-family: 'RiiTegakiFude';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.character {
+    cursor: pointer;
+    color: black;
+}
+
+.character:hover {
+    color: darkred;
+    cursor: pointer
+}
+
+.mid {
+    font-size: 1.275em;
+    color:black;
+    font-family: 'RiiTegakiFude';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.char {
+    color: dodgerblue;
 }
 
 .vcs {

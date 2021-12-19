@@ -19,7 +19,9 @@ export class About extends Component {
 
         return (
             <div className="container row">
-                <p className="jap">About</p>
+                <p className="jap">My Intro to Coding</p>
+                <p className="jap small">[enter 2007]</p>
+
                 <div className="row">
 
                     <p className="jap small text-start">

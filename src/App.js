@@ -7,7 +7,7 @@ import './App.css'
 import Project from "./Pages/Project";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Hiragana from "./Pages/Hiragana";
+import Japanese from "./Pages/Japanese";
 
 export class App extends Component {
 
@@ -35,7 +35,7 @@ export class App extends Component {
                                 <div className="text-block-2"><Link to="/about" className="navigationItems">About</Link></div>
                             </div>
                             <div className="w-col w-col-4">
-                                <div className="text-block-2"><Link to="/hiragana" className="navigationItems">Hiragana</Link></div>
+                                <div className="text-block-2"><Link to="/japanese" className="navigationItems">Japanese</Link></div>
                             </div>
                         </div>
 
@@ -45,7 +45,7 @@ export class App extends Component {
                         <Route exact path="/" element={<Home/>}/>
                         <Route exact path="/about" element={<About/>}/>
                         <Route exact path="/projects" element={<Project/>}/>
-                        <Route exact path="/hiragana" element={<Hiragana/>}/>
+                        <Route exact path="/japanese" element={<Japanese/>}/>
                     </Routes>
                 </BrowserRouter>
             </div>
