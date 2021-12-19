@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Link, Routes} from 'react-router-dom';
+import {HashRouter, Route, Link, Routes} from 'react-router-dom';
 import React, {Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css'
@@ -25,7 +25,7 @@ export class App extends Component {
 
         return (
             <div className="App container-fluid">
-                <BrowserRouter>
+                <HashRouter>
                     <div className="navigationMenu">
                         <div className="links w-row">
                             <div className="column w-col w-col-4">
@@ -33,6 +33,9 @@ export class App extends Component {
                             </div>
                             <div className="column-2 w-col w-col-4">
                                 <div className="text-block-2"><Link to="/about" className="navigationItems">About</Link></div>
+                            </div>
+                            <div className="column-2 w-col w-col-4">
+                                <div className="text-block-2"><Link to="/projects" className="navigationItems">Projects</Link></div>
                             </div>
                             <div className="w-col w-col-4">
                                 <div className="text-block-2"><Link to="/japanese" className="navigationItems">Japanese</Link></div>
@@ -47,7 +50,7 @@ export class App extends Component {
                         <Route exact path="/projects" element={<Project/>}/>
                         <Route exact path="/japanese" element={<Japanese/>}/>
                     </Routes>
-                </BrowserRouter>
+                </HashRouter>
             </div>
         );
     }
